@@ -27,6 +27,12 @@
         const subtitle = "This is a website for learning react.";
         const address = "https://www.netninja.dev";
 
+        // const handleClick = (e) => {
+        //   console.log("you clicked the button :)");
+        //   console.log("the site title is: ", title);
+        //   console.log(e);
+        // };
+
         return (
           // we can write another div ONLY in other div
           <div className="banner">
@@ -35,6 +41,7 @@
             <p>Today's date is: {new Date().toDateString()}</p>
             <p>Random number: {Math.random() * 1000}</p>
             <a href={address}>Visit the Net Ninja site</a>
+            <button onClick={(e) => console.log(e)}>Click me</button>
           </div>
         );
       };
