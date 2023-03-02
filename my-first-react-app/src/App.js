@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  const [showEvents, setShowEvents] = useState(true);
   const [events, setEvents] = useState([
     { title: "movie night", id: 1 },
     { title: "live stream", id: 2 },
@@ -17,30 +18,43 @@ function App() {
     console.log(id);
   };
 
-  // const deleteEvent = (id) => {
-  //   setEvents(
-  //     events.filter((event) => {
-  //       return id !== event.id;
-  //     })
-  //   );
-  // };
+  useEffect(() => {
+    console.log(showEvents);
+  }, [showEvents]);
 
   return (
     <div className="App" id="test">
-      {events.map((event, index) => (
-        <div key={event.id}>
-          <h2>
-            {event.id} - {event.title}
-          </h2>
+      {showEvents && (
+        <div>
+          <button onClick={() => setShowEvents(false)}>hide events</button>
+        </div>
+      )}
+      {!showEvents && (
+        <div>
           <button
             onClick={() => {
-              deleteEvent(event.id);
+              setShowEvents(true);
             }}
           >
-            Delete event
+            show events
           </button>
         </div>
-      ))}
+      )}
+      {showEvents &&
+        events.map((event, index) => (
+          <div key={event.id}>
+            <h2>
+              {event.id} - {event.title}
+            </h2>
+            <button
+              onClick={() => {
+                deleteEvent(event.id);
+              }}
+            >
+              Delete event
+            </button>
+          </div>
+        ))}
     </div>
   );
 }
