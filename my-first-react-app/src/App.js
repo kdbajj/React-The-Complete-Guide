@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Title from "./components/Title";
 
@@ -29,8 +29,8 @@ function App() {
   return (
     <div className="App" id="test">
       <Title title="Events in Your Area" subtitle={subtitle} />
-      <Title title="other title" subtitle={subtitle} />
 
+      <Title title="other title" subtitle="events" />
       {showEvents && (
         <div>
           <button onClick={() => setShowEvents(false)}>hide events</button>
@@ -49,7 +49,7 @@ function App() {
       )}
       {showEvents &&
         events.map((event, index) => (
-          <div key={event.id}>
+          <React.Fragment key={event.id}>
             <h2>
               {event.id} - {event.title}
             </h2>
@@ -60,7 +60,7 @@ function App() {
             >
               Delete event
             </button>
-          </div>
+          </React.Fragment>
         ))}
     </div>
   );
