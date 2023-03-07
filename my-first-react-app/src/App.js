@@ -20,13 +20,17 @@ function App() {
   };
   //abc
 
+  const subtitle = "All the latest events";
+
   useEffect(() => {
     console.log(showEvents);
   }, [showEvents]);
 
   return (
     <div className="App" id="test">
-      <Title />
+      <Title title="Events in Your Area" subtitle={subtitle} />
+      <Title title="other title" subtitle={subtitle} />
+
       {showEvents && (
         <div>
           <button onClick={() => setShowEvents(false)}>hide events</button>
