@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Title from "./components/Title";
+import Modal from "./components/Modal";
 
 function App() {
   const [showEvents, setShowEvents] = useState(true);
   const [events, setEvents] = useState([
     { title: "movie night", id: 1 },
-    { title: "live stream", id: 2 },
     { title: "birthday", id: 3 },
+    { title: "live stream", id: 2 },
   ]);
 
   const deleteEvent = (id) => {
@@ -30,6 +31,15 @@ function App() {
     <div className="App" id="test">
       <Title title="Events in Your Area" subtitle={subtitle} />
 
+      <Modal>
+        <h2>10% Off coupon Code!</h2>
+        <p>Use our code at the checkout</p>
+      </Modal>
+      <Modal>
+        <h2>Terms and Conditions</h2>
+        <p>sakndjsnajdkjnasknjkanjnsjandjsan</p>
+        <a href="#">find out more!</a>
+      </Modal>
       <Title title="other title" subtitle="events" />
       {showEvents && (
         <div>
