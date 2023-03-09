@@ -4,7 +4,7 @@ import Title from "./components/Title";
 import Modal from "./components/Modal";
 
 function App() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [showEvents, setShowEvents] = useState(true);
   const [events, setEvents] = useState([
     { title: "movie night", id: 1 },
@@ -37,17 +37,6 @@ function App() {
     <div className="App" id="test">
       <Title title="Events in Your Area" subtitle={subtitle} />
 
-      {showModal && (
-        <Modal handleClose={handleClose}>
-          <h2>Terms and Conditions</h2>
-          <p>sakndjsnajdkjnasknjkanjnsjandjsan</p>
-          <a href="#">find out more!</a>
-        </Modal>
-      )}
-
-      <div>
-        <button onClick={() => setShowModal(true)}>Show Modal</button>
-      </div>
       {/* <Modal>
         <h2>10% Off coupon Code!</h2>
         <p>Use our code at the checkout</p>
@@ -61,6 +50,17 @@ function App() {
           </button>
         </div>
       )}
+      {showModal && (
+        <Modal handleClose={handleClose}>
+          <h2>Terms and Conditions</h2>
+          <p>sakndjsnajdkjnasknjkanjnsjandjsan</p>
+          <a href="#">find out more!</a>
+        </Modal>
+      )}
+
+      <div>
+        <button onClick={() => setShowModal(true)}>Show Modal</button>
+      </div>
       {!showEvents && (
         <div>
           <button
