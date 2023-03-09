@@ -37,11 +37,6 @@ function App() {
     <div className="App" id="test">
       <Title title="Events in Your Area" subtitle={subtitle} />
 
-      {/* <Modal>
-        <h2>10% Off coupon Code!</h2>
-        <p>Use our code at the checkout</p>
-      </Modal> */}
-
       {showModal && (
         <Modal handleClose={handleClose}>
           <h2>Terms and Conditions</h2>
@@ -49,6 +44,15 @@ function App() {
           <a href="#">find out more!</a>
         </Modal>
       )}
+
+      <div>
+        <button onClick={() => setShowModal(true)}>Show Modal</button>
+      </div>
+      {/* <Modal>
+        <h2>10% Off coupon Code!</h2>
+        <p>Use our code at the checkout</p>
+      </Modal> */}
+
       <Title title="other title" subtitle="events" />
       {showEvents && (
         <div>
