@@ -12,6 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+p,h1,h2{
+  color:#555;
+}
 .title{
   display: inline-block;
   padding: 30px 60px;
