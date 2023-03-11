@@ -1,12 +1,12 @@
 import ReactDOM from 'react-dom'
 import './Modal.css'
 
-export default function Modal({children, handleClose}) {
+export default function Modal({children, handleClose, isSalesModal}) {
   return ReactDOM.createPortal((
     <div className="modal-backdrop">
         <div className="modal" style={{
           border: "4px solid",
-           borderColor:"#111",
+           borderColor: isSalesModal ? "#111" : "#777",
            textAlign: "center" 
            }}>
           {/* instead of writing everything in component

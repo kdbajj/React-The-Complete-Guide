@@ -52,7 +52,7 @@ function App() {
         </div>
       )}
       {showModal && (
-        <Modal handleClose={handleClose}>
+        <Modal handleClose={handleClose} isSalesModal={false}>
           <h2>Terms and Conditions</h2>
           <p>sakndjsnajdkjnasknjkanjnsjandjsan</p>
           <a href="#">find out more!</a>
