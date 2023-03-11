@@ -38,3 +38,9 @@ height: 100%;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
 }
+
+.modal .sales-btn{
+    border: 4px solid #d31616;
+    font-size: 18px;
+    text-transform: uppercase;
+}
