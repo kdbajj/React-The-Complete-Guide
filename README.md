@@ -12,6 +12,6 @@ In this course i learned how to create modern and dynamic React websites. This i
 While doing this project I had opportunity to work with React.js fundamentals, and got overall knowledge about this framework. It was very useful, and enlightening for me. It will definetely help me to create more professional websites in the future.
 
 ## Project
-My very first project in react is website linked down below. While doing it i learned a lot of react fundamentals like: using Create-React-App, using State & useState, Components & Props, Styling React Applications, User Input & Events, and also Fetching Data & useEffect.
+My very first project in react is website linked down below. While doing this i learned a lot of react fundamentals like: using Create-React-App, using State & useState, Components & Props, Styling React Applications, User Input & Events, and also Fetching Data & useEffect.
 
 # <a href = "">Link to the website</a> 👈 Demo here
