@@ -1,4 +1,5 @@
 import React from "react";
+import "./EventList.css"
 
 export default function EventList({events, deleteEvent}){
 return(
@@ -6,7 +7,7 @@ return(
 <div>
     {
     events.map((event, index) => (
-        <React.Fragment key={event.id}>
+        <div className="card" key={event.id}>
           <h2>
             {event.id} - {event.title}
           </h2>
@@ -17,7 +18,7 @@ return(
           >
             Delete event
           </button>
-        </React.Fragment>
+        </div>
       ))}
       </div>
         

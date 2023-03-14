@@ -1,0 +1,21 @@
+.card{
+    border: 1px solid #eee;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+.card button{
+    background-color: #e21631;
+    color: #eee;
+}
+.card button:active{
+    background-color: #bd3a4c;
+    color: #000;
+}
+.card button:hover{
+    background-color: #d98d97;
+    color: #000;
+}
