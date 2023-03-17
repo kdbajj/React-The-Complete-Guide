@@ -8,7 +8,7 @@ export default function NewEventForm() {
     const [date, setDate] = useState('')
 
     // const handleChange= (e)=>{
-    //     setTitle(e.target.value)
+    //    // setTitle(e.target.value)
     // }
 
     const resetForm = () => {
