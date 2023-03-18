@@ -11,6 +11,12 @@ export default function NewEventForm() {
     //     setTitle(e.target.value)
     // }
 
+    const resetForm = () => {
+        setTitle('')
+        setDate('')
+        
+    }
+
   return (
     <form className='new-event-form'>
         <label>
@@ -23,6 +29,7 @@ export default function NewEventForm() {
     </label>
     <button>Submit</button>
     <p>title - {title}, date - {date}</p>
+    <p onClick={resetForm}>reset the form </p>
     </form>
   )
 }
