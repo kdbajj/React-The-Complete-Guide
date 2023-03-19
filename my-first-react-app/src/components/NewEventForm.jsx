@@ -14,7 +14,6 @@ export default function NewEventForm() {
     const resetForm = () => {
         setTitle('')
         setDate('')
-        
     }
 
   return (
