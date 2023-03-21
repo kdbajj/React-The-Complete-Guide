@@ -16,8 +16,20 @@ export default function NewEventForm() {
         setDate('')
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();// function preventDefault prevents the default behaviour ( the browser refresh ) 
+
+        const event = {
+            title: title,
+            date: date,
+            id: Math.floor(Math.random() * 10000)
+        }
+        console.log(event);
+        resetForm();
+    }
+
   return (
-    <form className='new-event-form'>
+    <form className='new-event-form' onSubmit={handleSubmit}>
         <label>
             <span className='eventTitle'>Event Title: </span>
             <input type="text"
@@ -31,8 +43,6 @@ export default function NewEventForm() {
         value={date}/>
     </label>
     <button>Submit</button>
-    <p>title - {title}, date - {date}</p>
-    <p onClick={resetForm}>reset the form </p>
     </form>
   )
 }
