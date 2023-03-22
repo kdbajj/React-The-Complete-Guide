@@ -11,6 +11,7 @@ return(
           <h2>
             {event.id} - {event.title}
           </h2>
+          <p>{event.location}: {event.date}</p>
           <button
             onClick={() => {
               deleteEvent(event.id);
