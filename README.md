@@ -18,4 +18,4 @@ My very first project in react is website linked down below. While doing this i 
 
 I also made notes in Notion while doing the course, here is a link:
 
-<a href = "https://fantastic-memory-3e8.notion.site/React-The-Complete-Guide-notes-7dc2fee6ec3742aab243801b5275dc69/a> 👈 Notes here
+# <a href = "https://fantastic-memory-3e8.notion.site/React-The-Complete-Guide-notes-7dc2fee6ec3742aab243801b5275dc69"> Link to the notes</a> 👈 Notes here
