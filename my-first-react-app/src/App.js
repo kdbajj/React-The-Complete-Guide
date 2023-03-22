@@ -8,13 +8,16 @@ import NewEventForm from "./components/NewEventForm";
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [showEvents, setShowEvents] = useState(true);
-  const [events, setEvents] = useState([
-    { title: "movie night", id: 1 },
-    { title: "birthday", id: 3 },
-    { title: "live stream", id: 2 },
-  ]);
+  const [events, setEvents] = useState([]);
 
   console.log(showModal);
+
+  const addEvent = (event) => {
+    setEvents((prevEvents) => {
+      return [...prevEvents, event];
+    });
+    setShowModal(false);
+  };
 
   const subtitle = "All the latest events";
 
@@ -27,9 +30,6 @@ function App() {
     console.log(id);
   };
   //abc
-  const handleClose = () => {
-    setShowModal(false);
-  };
 
   useEffect(() => {
     console.log(showEvents);
@@ -38,12 +38,10 @@ function App() {
   return (
     <div className="App" id="test">
       <Title title="Events in Your Area" subtitle={subtitle} />
-
       {/* <Modal>
         <h2>10% Off coupon Code!</h2>
         <p>Use our code at the checkout</p>
       </Modal> */}
-
       <Title title="other title" subtitle="events" />
       {showEvents && (
         <div>
@@ -53,11 +51,10 @@ function App() {
         </div>
       )}
       {showModal && (
-        <Modal handleClose={handleClose} isSalesModal={true}>
-          <NewEventForm></NewEventForm>
+        <Modal isSalesModal={true}>
+          <NewEventForm addEvent={addEvent}></NewEventForm>
         </Modal>
       )}
-
       <div>
         <button onClick={() => setShowModal(true)}>Add new event</button>
       </div>

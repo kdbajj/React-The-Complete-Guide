@@ -15,10 +15,6 @@ export default function Modal({children, handleClose, isSalesModal}) {
             {/* <h2>10% Off coupon Code!</h2>
             <p>Use our code at the checkout</p> */}
           {children}
-          <button 
-          onClick={handleClose} 
-          className={isSalesModal ? "sales-btn" : ""}
-          >Close</button>
         </div>
     </div>
   ), document.body)
