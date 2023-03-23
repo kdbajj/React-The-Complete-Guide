@@ -42,7 +42,7 @@ function App() {
         <h2>10% Off coupon Code!</h2>
         <p>Use our code at the checkout</p>
       </Modal> */}
-      <Title title="other title" subtitle="events" />
+      {/* <Title title="other title" subtitle="events" /> */}
       {showEvents && (
         <div>
           <button className="hideEvents" onClick={() => setShowEvents(false)}>
