@@ -1,0 +1,20 @@
+{
+    "trips": [
+        {
+            "title": "Venice",
+            "price": "$196"
+        },
+        {
+            "title": "Paris",
+            "price": "$295"
+        },
+        {
+            "title": "London",
+            "price": "$345"
+        },  
+        {
+            "title": "New york",
+            "price": "$350"
+        }
+    ]
+}
