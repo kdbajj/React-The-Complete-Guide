@@ -12,7 +12,7 @@ export default function TripList() {
         .then(response => response.json())//that method returns json to us
         .then(json => setTrips(json))
     }, [])
-    
+    //
     console.log(trips);
 
 
