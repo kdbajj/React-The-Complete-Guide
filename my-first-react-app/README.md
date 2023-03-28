@@ -5,7 +5,7 @@ This is my first project from <a href="https://www.udemy.com/course/build-web-ap
 
 This project is an event app. You can type a name of the event to the form, choose place and date. Event will appear on the page and then you have an option to delete it. While doing this app i learned React fundamentals like:
 - create and run project, 
-- useState states,
+- useState,
 - rendering,
 - stylesheets,
 - useEffect,
