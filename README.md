@@ -12,10 +12,14 @@ In this course i learned how to create modern and dynamic React websites. This i
 While doing this project I had opportunity to work with React.js fundamentals, and got overall knowledge about this framework. It was very useful, and enlightening for me. It will definetely help me to create more professional websites in the future.
 
 ## First project - event list
-My very first project in react is website linked down below. While doing this i learned a lot of react fundamentals like: using Create-React-App, using State & useState, Components & Props, Styling React Applications, User Input & Events, and also Fetching Data & useEffect.
+This is my very first project in react is website linked down below. While doing this i learned a lot of react fundamentals like: using Create-React-App, using State & useState, Components & Props, Styling React Applications, User Input & Events, and also Fetching Data & useEffect.
 
 
 # <a href = "https://relaxed-bavarois-623a12.netlify.app">Link to the website - event list</a> 👈 Demo here
+
+<!-- ## Project - tripago -->
+
+
 
 I also made notes in Notion while doing the course, here is a link:
 
