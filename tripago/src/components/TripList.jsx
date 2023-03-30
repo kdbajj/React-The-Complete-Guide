@@ -11,8 +11,8 @@ export default function TripList() {
         fetch(url)
         .then(response => response.json())//that method returns json to us
         .then(json => setTrips(json))
-    }, [])
-    //
+    }, [url])
+    
     console.log(trips);
 
 
@@ -27,6 +27,14 @@ export default function TripList() {
             </li>
           ))}
         </ul>
+        <div className='filters'>
+          <button onClick={() => setUrl('http://localhost:3000/trips?loc=europe')}>
+            European trips
+          </button>
+            <button onClick={()=> setUrl('http://localhost:3000/trips')}>
+              All trips
+            </button>
+        </div>
     </div>
   )
 }

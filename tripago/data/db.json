@@ -3,22 +3,26 @@
         {
             "title": "Venice",
             "price": "$196",
-            "id": "1"
+            "id": "1",
+            "loc": "europe"
         },
         {
             "title": "Paris",
             "price": "$295",
-            "id": "2"
+            "id": "2",
+            "loc": "europe"
         },
         {
             "title": "London",
             "price": "$345",
-            "id": "3"
+            "id": "3",
+            "loc": "europe"
         },  
         {
             "title": "New york",
             "price": "$350",
-            "id": "4"
+            "id": "4",
+            "loc": "america" 
         }
     ]
 }

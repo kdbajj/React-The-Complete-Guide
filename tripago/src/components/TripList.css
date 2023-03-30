@@ -16,3 +16,29 @@
     border-radius: 4px;
     margin: 20px 0;
 }
+
+.trip-list .filters{
+    display: flex;
+    gap: 10px;
+}
+
+.trip-list button{
+    padding: 10px;
+    font-size: 19px;
+    flex-grow: 1;
+    border-radius: 10px;
+    background-color: #ccc9e5;
+    box-shadow: 8px 7px 8px #e4dede;
+    border-color: #e4e4e4;
+    font-family: sans-serif;
+}
+
+.trip-list button:hover{
+    background: #e7dae9;
+}
+.trip-list button:active{
+    background: #e7dae9;
+    box-shadow: 1.5px 3px #c7c6c6;
+    box-shadow: 10px 4px 8px #e4dede;
+
+}
